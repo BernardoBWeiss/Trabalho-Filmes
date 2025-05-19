@@ -32,8 +32,10 @@
   }
 </style>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<body class="bg-dark">
+
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border rounded-3 border-light border-3">
     <div class="container">
       <a class="navbar-brand" href="Principal.html"><i class="bi bi-camera-reels-fill"></i> MeteFlix</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -48,68 +50,140 @@
     </div>
   </nav>
 
-  <div id="carouselExampleIndicators" class="carousel slide justify-content-center">
+  <!-- Carrousel -->
+  <div id="carouselExampleIndicators" class="carousel slide justify-content-center ">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
         aria-label="Slide 2"></button>
-
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/pt/thumb/5/50/A_Minecraft_Movie_p%C3%B4ster.jpg/250px-A_Minecraft_Movie_p%C3%B4ster.jpg"
-          class="d-flex w-25" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://br.web.img2.acsta.net/pictures/23/11/08/13/46/4065511.png" class="d-flex w-25" alt="...">
-      </div>
 
+    <div id="carouselExampleIndicators" class="carousel slide" style="width: 50%; margin: 0 auto;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/pt/thumb/5/50/A_Minecraft_Movie_p%C3%B4ster.jpg/250px-A_Minecraft_Movie_p%C3%B4ster.jpg"
+            class="d-block w-100" style="max-width: 50%; margin: 0 auto;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://br.web.img2.acsta.net/pictures/23/11/08/13/46/4065511.png" class="d-block w-100"
+            style="max-width: 50%; margin: 0 auto;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://m.media-amazon.com/images/S/pv-target-images/0e3a7ffefd66b4c92529b56ad7e54a0e4cfe0d5891b42469e267c5a6e7248c4c.jpg"
+            class="d-block w-100" style="max-width: 50%; margin: 0 auto;" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
 
+  <!-- Lançamentos Recentes -->
   <div class="container mt-5">
-    <h2 class="mb-4"><i class="bi bi-star-fill text-warning"></i> Lançamentos Recentes</h2>
+    <h2 class="mb-4 text-light"><i class="bi bi-star-fill text-warning"></i> Lançamentos Recentes</h2>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card shadow-sm">
-          <img src="------------------------" class="card-img-top" alt="Filme">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/pt/thumb/9/99/Premoni%C3%A7%C3%A3o_6_Lacosdesangue.webp/250px-Premoni%C3%A7%C3%A3o_6_Lacosdesangue.webp.png"
+            class="card-img-top" alt="Filme">
           <div class="card-body">
-            <h5 class="card-title">Filme Lançamento</h5>
-            <p class="card-text">Ano: 2025</p>
-            <a href="Filmes.html" class="btn btn-outline-primary btn-sm">Ver detalhes</a>
+            <h5 class="card-title">Premonição 6: Laços de Sangue</h5>
+            <p class="card-text">15 de maio de 2025</p>
+            <a href="https://pt.wikipedia.org/wiki/Final_Destination:_Bloodlines"
+              class="btn btn-outline-primary btn-sm">Ver detalhes</a>
           </div>
         </div>
       </div>
-
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img
+            src="https://www.cinemark.com.br/_next/image?url=https%3A%2F%2Fcdnim.prd.cineticket.com.br%2Fimages%2Fcms%2FmoviePoster%2FMoviePoster-a8cb4c4d-11bd-445d-90ff-7299769dc819.png&w=3840&q=75"
+            class="card-img-top" alt="Filme">
+          <div class="card-body">
+            <h5 class="card-title">Hurry Up Tomorrow: Além dos Holofotes</h5>
+            <p class="card-text">15 de maio de 2025</p>
+            <a href="https://pt.wikipedia.org/wiki/Hurry_Up_Tomorrow_(filme)" class="btn btn-outline-primary btn-sm">Ver
+              detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/pt/thumb/1/16/O_Macaco_2025.webp/250px-O_Macaco_2025.webp.png"
+            class="card-img-top" alt="Filme">
+          <div class="card-body">
+            <h5 class="card-title">O Macaco</h5>
+            <p class="card-text"> 6 de março de 2025</p>
+            <a href="https://pt.wikipedia.org/wiki/O_Macaco" class="btn btn-outline-primary btn-sm">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-
-  <div class="container mt-5 mb-5">
-    <h2 class="mb-4"><i class="bi bi-award-fill text-success"></i> Filmes que ganharam Oscar</h2>
+  <!-- Filmes Oscar -->
+  <div class="container mt-5 mb-5 weight: 500px height: 500px">
+    <h2 class="mb-4 text-light"><i class="bi bi-award-fill text-success"></i> Filmes que ganharam Oscar</h2>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card shadow-sm">
-          <img src="----------------------" class="card-img-top" alt="Oscar">
+          <img src="https://br.web.img3.acsta.net/pictures/22/10/20/16/25/1413867.jpg" class="card-img-top" alt="Oscar">
           <div class="card-body">
-            <h5 class="card-title">Filme Premiado</h5>
+            <h5 class="card-title">Nada de Novo no Front</h5>
             <p class="card-text">Melhor Filme - 2023</p>
-            <a href="Filmes.html" class="btn btn-outline-success btn-sm">Saiba mais</a>
+            <a href="https://www.omelete.com.br/filmes/criticas/nada-novo-no-front-netflix"
+              class="btn btn-outline-success btn-sm">Saiba mais</a>
           </div>
         </div>
       </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img
+            src="https://m.media-amazon.com/images/S/pv-target-images/2013376a43d7ead3ba4cbca524442980bdbd41aad15ae792228d551ba0f76862.jpg"
+            class="card-img-top" alt="Oscar">
+          <div class="card-body">
+            <h5 class="card-title">Avatar: O Caminho da Água</h5>
+            <p class="card-text">Melhor Filme - 2023</p>
+            <a href="https://www.omelete.com.br/filmes/criticas/avatar-2-filme-critica"
+              class="btn btn-outline-success btn-sm">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://br.web.img3.acsta.net/pictures/23/01/13/17/17/0580972.jpg" class="card-img-top" alt="Oscar">
+          <div class="card-body">
+            <h5 class="card-title">Os Banshees de Inisherin</h5>
+            <p class="card-text">Melhor Filme - 2023</p>
+            <a href="https://www.omelete.com.br/filmes/criticas/banshees-inisherin-filme-critica"
+              class="btn btn-outline-success btn-sm">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <br>
     </div>
   </div>
 
