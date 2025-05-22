@@ -12,9 +12,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        .navbar {
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-        }
+
 
         .genre-title {
             margin-top: 60px;
@@ -60,44 +58,58 @@
     </style>
 </head>
 
+<!--Para abrir o modal de cada série é necessário cicar no card-->
+<!--Para abrir o modal de cada série é necessário cicar no card-->
+<!--Para abrir o modal de cada série é necessário cicar no card-->
+<!--Para abrir o modal de cada série é necessário cicar no card-->
+<!--Para abrir o modal de cada série é necessário cicar no card-->
+<!--Para abrir o modal de cada série é necessário cicar no card-->
+<!--Para abrir o modal de cada série é necessário cicar no card-->
+<!--Para abrir o modal de cada série é necessário cicar no card-->
+<!--Para abrir o modal de cada série é necessário cicar no card-->
+<!--Para abrir o modal de cada série é necessário cicar no card-->
+
 <body class="bg-dark text-light">
 
     <!--NavBar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border rounded-3 border-light border-3">
-    <div class="container">
-      <a class="navbar-brand" href="Principal.html"><i class="bi bi-camera-reels-fill"></i> MeteFlix</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="Series.html"><i class="bi bi-tv-fill"></i> Séries</a></li>
-          <li class="nav-item"><a class="nav-link" href="Filmes.html"><i class="bi bi-film"></i> Filmes</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-    
-  
+        <div class="container">
+            <a class="navbar-brand" href="Principal.html"><i class="bi bi-camera-reels-fill"></i> MeteFlix</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="Series.html"><i class="bi bi-tv-fill"></i>
+                            Séries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Filmes.html"><i class="bi bi-film"></i> Filmes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container mt-5">
 
         <!--Generos-->
         <div class="mb-4 text-center">
             <h2><i class="bi bi-collection-play"></i> Séries por Gênero</h2>
         </div>
-          <div class="mb-4">
+        <div class="mb-4">
             <h2 class="mb-3 text-light"><i class="bi bi-list-ul"></i> Gêneros</h2>
             <div class="btn-group" role="group">
                 <a href="#suspense" class="btn btn-outline-secondary btn-sm text-light">Suspense</a>
-                  <a href="#acao" class="btn btn-outline-secondary btn-sm text-light">Ação</a> 
+                <a href="#acao" class="btn btn-outline-secondary btn-sm text-light">Ação</a>
                 <a href="#comedia" class="btn btn-outline-secondary btn-sm text-light">Comédia</a>
             </div>
         </div>
 
         <!-- Suspense -->
         <div id="suspense">
-            <h3  class="genre-title"><i class="bi bi-eye-fill text-dark"></i> Suspense</h3>
+            <h3 class="genre-title"><i class="text-dark"></i> Suspense</h3>
             <div class="row g-4">
+
+                <!--Stranger Things-->
                 <div class="col-md-4">
                     <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalStrangerThings">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Stranger_Things_logo.png"
@@ -109,8 +121,36 @@
                         </div>
                     </div>
                 </div>
+
+                <!--MindHunter-->
+                <div class="col-md-4">
+                    <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalMindhunter">
+                        <img src="https://aventurasnahistoria.com.br/media/uploads/capa_mindhunter_netflix_ah_indica.jpeg"
+                            class="card-img-top" alt="Mindhunter">
+                        <div class="card-body">
+                            <h5 class="card-title">Mindhunter</h5>
+                            <p class="card-text">Jonathan Groff, Holt McCallany<br><small>Classificação: 16 anos</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Dark-->
+                <div class="col-md-4">
+                    <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalDark">
+                        <img src="https://farofageek.com.br/wp-content/uploads/2020/06/wallpaper-de-dark-para-celular.jpg"
+                            class="card-img-top" alt="Dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Dark</h5>
+                            <p class="card-text">Louis Hofmann, Oliver Masucci<br><small>Classificação: 16 anos</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!--Modals Suspense-->
         <div class="modal fade" id="modalStrangerThings" tabindex="-1" aria-labelledby="modalStrangerLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -131,10 +171,52 @@
             </div>
         </div>
 
+        <div class="modal fade" id="modalMindhunter" tabindex="-1" aria-labelledby="modalMindhunterLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content text-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Mindhunter</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Diretor:</strong> David Fincher</p>
+                        <p><strong>Atores:</strong> Jonathan Groff, Holt McCallany</p>
+                        <p><strong>Classificação:</strong> 16 anos</p>
+                        <p><strong>Gêneros:</strong> Suspense, Crime, Drama</p>
+                        <p><strong>Temporadas:</strong> 2</p>
+                        <p><strong>Episódios:</strong> 19</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalDark" tabindex="-1" aria-labelledby="modalDarkLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content text-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Dark</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Diretor:</strong> Baran bo Odar</p>
+                        <p><strong>Atores:</strong> Louis Hofmann, Oliver Masucci</p>
+                        <p><strong>Classificação:</strong> 16 anos</p>
+                        <p><strong>Gêneros:</strong> Suspense, Ficção Científica, Drama</p>
+                        <p><strong>Temporadas:</strong> 3</p>
+                        <p><strong>Episódios:</strong> 26</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Ação -->
         <div id="acao">
-            <h3 class="genre-title"><i class="bi bi-lightning-fill text-danger"></i> Ação</h3>
+            <h3 class="genre-title"><i class="text-danger"></i> Ação</h3>
             <div class="row g-4">
+
+                <!--The Punisher-->
                 <div class="col-md-4">
                     <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalThePunisher">
                         <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FC2694EE848388AF9E8C8202548FA7F4377DDE91B1F7ADBF974EE404634F7689/scale?width=1200&aspectRatio=1.78&format=webp"
@@ -146,9 +228,35 @@
                         </div>
                     </div>
                 </div>
+
+                <!--Daredevil-->
+                <div class="col-md-4">
+                    <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalDaredevil">
+                        <img src="data:image/webp;base64,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"
+                            class="card-img-top" alt="Daredevil">
+                        <div class="card-body">
+                            <h5 class="card-title">Daredevil</h5>
+                            <p class="card-text">Charlie Cox, Vincent D'Onofrio<br><small>Classificação: 18 anos</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--The Boys-->
+                <div class="col-md-4">
+                    <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalTheBoys">
+                        <img src="https://www.estadao.com.br/recomenda/wp-content/uploads/2024/06/The-Boys-4-temporada-capa.jpg.webp"
+                            class="card-img-top" alt="The Boys">
+                        <div class="card-body">
+                            <h5 class="card-title">The Boys</h5>
+                            <p class="card-text">Karl Urban, Jack Quaid<br><small>Classificação: 18 anos</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!--Modals Ação-->
         <div class="modal fade" id="modalThePunisher" tabindex="-1" aria-labelledby="modalPunisherLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -158,7 +266,6 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                     </div>
                     <div class="modal-body">
-
                         <p><strong>Diretor:</strong> Steve Lightfoot</p>
                         <p><strong>Atores:</strong> Jon Bernthal, Ebon Moss-Bachrach</p>
                         <p><strong>Classificação:</strong> 18 anos</p>
@@ -170,23 +277,90 @@
             </div>
         </div>
 
+        <div class="modal fade" id="modalDaredevil" tabindex="-1" aria-labelledby="modalDaredevilLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content text-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Daredevil</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Diretor:</strong> Drew Goddard</p>
+                        <p><strong>Atores:</strong> Charlie Cox, Vincent D'Onofrio</p>
+                        <p><strong>Classificação:</strong> 18 anos</p>
+                        <p><strong>Gêneros:</strong> Ação, Policial, Drama</p>
+                        <p><strong>Temporadas:</strong> 3</p>
+                        <p><strong>Episódios:</strong> 39</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalTheBoys" tabindex="-1" aria-labelledby="modalTheBoysLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content text-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title">The Boys</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Diretor:</strong> Eric Kripke</p>
+                        <p><strong>Atores:</strong> Karl Urban, Jack Quaid</p>
+                        <p><strong>Classificação:</strong> 18 anos</p>
+                        <p><strong>Gêneros:</strong> Ação, Comédia, Drama</p>
+                        <p><strong>Temporadas:</strong> 3</p>
+                        <p><strong>Episódios:</strong> 24</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Comédia -->
         <div id="comedia">
-            <h3 class="genre-title"><i class="bi bi-emoji-laughing-fill text-warning"></i> Comédia</h3>
+            <h3 class="genre-title"><i class="text-warning"></i> Comédia</h3>
             <div class="row g-4">
+
+                <!--The Office-->
                 <div class="col-md-4">
                     <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalTheOffice">
-                        <img src="https://br.web.img3.acsta.net/pictures/14/02/04/13/20/128334.jpg" class="card-img-top"
-                            alt="The Office">
+                        <img src="data:image/webp;base64,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"
+                            class="card-img-top" alt="The Office">
                         <div class="card-body">
                             <h5 class="card-title">The Office</h5>
                             <p class="card-text">Steve Carell, Rainn Wilson<br><small>Classificação: 12 anos</small></p>
                         </div>
                     </div>
                 </div>
+
+                <!--Parks and Recreation-->
+                <div class="col-md-4">
+                    <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalParksAndRec">
+                        <img src="https://ntvb.tmsimg.com/assets/p194833_b_h10_ae.jpg?w=960&h=540" class="card-img-top"
+                            alt="Parks and Recreation">
+                        <div class="card-body">
+                            <h5 class="card-title">Parks and Recreation</h5>
+                            <p class="card-text">Amy Poehler, Nick Offerman<br><small>Classificação: 12 anos</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Brooklyn Nine-Nine-->
+                <div class="col-md-4">
+                    <div class="card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalBrooklynNineNine">
+                        <img src="https://escotilha.com.br/wp-content/uploads/2016/08/serie-Brooklyn-Nine-Nine-resenha-critica.jpeg"
+                            class="card-img-top" alt="Brooklyn Nine-Nine">
+                        <div class="card-body">
+                            <h5 class="card-title">Brooklyn Nine-Nine</h5>
+                            <p class="card-text">Andy Samberg, Terry Crews<br><small>Classificação: 12 anos</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!--Modals Comédia-->
         <div class="modal fade" id="modalTheOffice" tabindex="-1" aria-labelledby="modalOfficeLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content text-dark">
@@ -195,20 +369,70 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                     </div>
                     <div class="modal-body">
-                        <p><strong>Diretor:</strong> Greg Daniels</p>
+                        <p><strong>Diretor:</strong> Ricky Gervais, Greg Daniels</p>
                         <p><strong>Atores:</strong> Steve Carell, Rainn Wilson</p>
                         <p><strong>Classificação:</strong> 12 anos</p>
                         <p><strong>Gêneros:</strong> Comédia, Sitcom</p>
                         <p><strong>Temporadas:</strong> 9</p>
-                        <p><strong>Episódios:</strong> 201</p>
+                        <p><strong>Episódios:</strong> 204</p>
                     </div>
                 </div>
             </div>
         </div>
-        <br>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <div class="modal fade" id="modalParksAndRec" tabindex="-1" aria-labelledby="modalOfficeLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content text-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Parks and Recreation</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <p><strong>Diretor:</strong> Greg Daniels, Michael Schur</p>
+                            <p><strong>Atores:</strong> Amy Poehler, Rashida Jones, Nick Offerman, Aubrey Plaza</p>
+                            <p><strong>Classificação:</strong> 14 anos</p>
+                            <p><strong>Gêneros:</strong> Comédia, Sitcom</p>
+                            <p><strong>Temporadas:</strong> 7</p>
+                            <p><strong>Episódios:</strong> 125</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modalBrooklynNineNine" tabindex="-1" aria-labelledby="modalOfficeLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content text-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title">The Office</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Diretor:</strong> Ken Whittingham , ...</p>
+                        <p><strong>Atores:</strong> Terry Crews, Andy Samberg ...</p>
+                        <p><strong>Classificação:</strong> 14 anos</p>
+                        <p><strong>Gêneros:</strong> Comédia, Sitcom</p>
+                        <p><strong>Temporadas:</strong> 8</p>
+                        <p><strong>Episódios:</strong> 153</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--NavBar como Rodapé-->
+        <nav
+            class="navbar navbar-expand-lg navbar-dark py-3 bg-dark sticky-bootom border rounded-3 border-light border-3 m-3 w-100">
+            <div class="container justify-content-center">
+                <a class="navbar-brand text-light">Bernardo B. Weiss e Bruno A. Falchetti - 3° Info B</a>
+            </div>
+        </nav>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

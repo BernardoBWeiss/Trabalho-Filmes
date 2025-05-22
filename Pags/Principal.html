@@ -30,12 +30,20 @@
     padding: 1rem;
     border-radius: 10px;
   }
+
+  .imagem {
+    height: 700px;
+  }
+
+  .imgCard {
+    height: 235px;
+  }
 </style>
 
 <body class="bg-dark">
 
   <!-- NavBar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border rounded-3 border-light border-3">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border rounded-3 border-light border-3 py-2 m-3">
     <div class="container">
       <a class="navbar-brand" href="Principal.html"><i class="bi bi-camera-reels-fill"></i> MeteFlix</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -51,7 +59,7 @@
   </nav>
 
   <!-- Carrousel -->
-  <div id="carouselExampleIndicators" class="carousel slide justify-content-center ">
+  <div id="carouselExampleIndicators" class="carousel slide justify-content-center py-3">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -62,28 +70,21 @@
     </div>
 
     <div id="carouselExampleIndicators" class="carousel slide" style="width: 50%; margin: 0 auto;">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
+
+      <div class="carousel-inner imagem">
         <div class="carousel-item active">
           <img
             src="https://upload.wikimedia.org/wikipedia/pt/thumb/5/50/A_Minecraft_Movie_p%C3%B4ster.jpg/250px-A_Minecraft_Movie_p%C3%B4ster.jpg"
-            class="d-block w-100" style="max-width: 50%; margin: 0 auto;" alt="...">
+            class="d-flex w-100 object-fit-cover" style="max-width: 50%; margin: 0 auto;" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="https://br.web.img2.acsta.net/pictures/23/11/08/13/46/4065511.png" class="d-block w-100"
-            style="max-width: 50%; margin: 0 auto;" alt="...">
+          <img src="https://br.web.img2.acsta.net/pictures/23/11/08/13/46/4065511.png"
+            class="d-flex w-100 object-fit-cover " style="max-width: 50%; margin: 0 auto;" alt="...">
         </div>
         <div class="carousel-item">
           <img
             src="https://m.media-amazon.com/images/S/pv-target-images/0e3a7ffefd66b4c92529b56ad7e54a0e4cfe0d5891b42469e267c5a6e7248c4c.jpg"
-            class="d-block w-100" style="max-width: 50%; margin: 0 auto;" alt="...">
+            class="d-flex w-100 object-fit-cover" style="max-width: 50%; margin: 0 auto;" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -100,14 +101,14 @@
   </div>
 
   <!-- Lançamentos Recentes -->
-  <div class="container mt-5">
+  <div class="container mt-5 ">
     <h2 class="mb-4 text-light"><i class="bi bi-star-fill text-warning"></i> Lançamentos Recentes</h2>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card shadow-sm">
           <img
-            src="https://upload.wikimedia.org/wikipedia/pt/thumb/9/99/Premoni%C3%A7%C3%A3o_6_Lacosdesangue.webp/250px-Premoni%C3%A7%C3%A3o_6_Lacosdesangue.webp.png"
-            class="card-img-top" alt="Filme">
+            src="https://rollingstone.com.br/media/_versions/2025/02/premonicao-6-lacos-de-sangue-novo-capitulo-da-franquia-de-terror-ganha-primeira-previa-1_widelg.jpg"
+            class="card-img-top imgCard" alt="Filme">
           <div class="card-body">
             <h5 class="card-title">Premonição 6: Laços de Sangue</h5>
             <p class="card-text">15 de maio de 2025</p>
@@ -118,9 +119,8 @@
       </div>
       <div class="col-md-4">
         <div class="card shadow-sm">
-          <img
-            src="https://www.cinemark.com.br/_next/image?url=https%3A%2F%2Fcdnim.prd.cineticket.com.br%2Fimages%2Fcms%2FmoviePoster%2FMoviePoster-a8cb4c4d-11bd-445d-90ff-7299769dc819.png&w=3840&q=75"
-            class="card-img-top" alt="Filme">
+          <img src="https://moodgate.com.br/wp-content/uploads/2025/02/the-weeknd.webp" class="card-img-top imgCard"
+            alt="Filme">
           <div class="card-body">
             <h5 class="card-title">Hurry Up Tomorrow: Além dos Holofotes</h5>
             <p class="card-text">15 de maio de 2025</p>
@@ -132,8 +132,8 @@
       <div class="col-md-4">
         <div class="card shadow-sm">
           <img
-            src="https://upload.wikimedia.org/wikipedia/pt/thumb/1/16/O_Macaco_2025.webp/250px-O_Macaco_2025.webp.png"
-            class="card-img-top" alt="Filme">
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu1GSgzOwqz6CyQe4zMFB_u_dOcCwrKeCBgCbiUNZidKnwGAahi-AzEp7l8dIokI507_JKJvTnfttEn7h3vnetOHl9tP3TcHmJnHLfwt0Of1SDaAN-hN59mvOgP7KutXG2uk9O3QD989ykmVbSqLRn0soyIR7qsIuWvEMt2rngpUeADTXqkSV6j8TRzT89/s1280/the-monkey.jpg"
+            class="card-img-top imgCard" alt="Filme">
           <div class="card-body">
             <h5 class="card-title">O Macaco</h5>
             <p class="card-text"> 6 de março de 2025</p>
@@ -146,11 +146,15 @@
 
   <!-- Filmes Oscar -->
   <div class="container mt-5 mb-5 weight: 500px height: 500px">
-    <h2 class="mb-4 text-light"><i class="bi bi-award-fill text-success"></i> Filmes que ganharam Oscar</h2>
+    <h2 class="mb-4 text-light"><i class="bi bi-award-fill text-success"></i> Filmes que Ganharam Oscar</h2>
     <div class="row g-4">
+
+      <!--Nada de Novo no Front-->
       <div class="col-md-4">
         <div class="card shadow-sm">
-          <img src="https://br.web.img3.acsta.net/pictures/22/10/20/16/25/1413867.jpg" class="card-img-top" alt="Oscar">
+          <img
+            src="https://cineset.com.br/wp-content/uploads/2022/11/Critica-Nada-de-Novo-no-Front-Netflix-2022-3-1.jpg"
+            class="card-img-top imgCard" alt="Oscar">
           <div class="card-body">
             <h5 class="card-title">Nada de Novo no Front</h5>
             <p class="card-text">Melhor Filme - 2023</p>
@@ -159,11 +163,12 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+
+      <!--Avatar: o Caminho da água-->
+      <div class="col-md-4 ">
         <div class="card shadow-sm">
-          <img
-            src="https://m.media-amazon.com/images/S/pv-target-images/2013376a43d7ead3ba4cbca524442980bdbd41aad15ae792228d551ba0f76862.jpg"
-            class="card-img-top" alt="Oscar">
+          <img src="https://proseandoliteratura.com/wp-content/uploads/2023/12/Avatar-o-caminho-da-agua.jpg"
+            class="imgCard card-img-top" alt="Oscar">
           <div class="card-body">
             <h5 class="card-title">Avatar: O Caminho da Água</h5>
             <p class="card-text">Melhor Filme - 2023</p>
@@ -172,9 +177,12 @@
           </div>
         </div>
       </div>
+
+      <!--Os Banshees de Inisherin-->
       <div class="col-md-4">
         <div class="card shadow-sm">
-          <img src="https://br.web.img3.acsta.net/pictures/23/01/13/17/17/0580972.jpg" class="card-img-top" alt="Oscar">
+          <img src="https://www.cafehistoria.com.br/wp-content/uploads/2023/01/Banshees-de-Inisherin.jpg"
+            class=" imgCard card-img-top" alt="Oscar">
           <div class="card-body">
             <h5 class="card-title">Os Banshees de Inisherin</h5>
             <p class="card-text">Melhor Filme - 2023</p>
@@ -186,6 +194,14 @@
       <br>
     </div>
   </div>
+
+  <!--NavBar como Rodapé-->
+  <nav
+    class="navbar navbar-expand-lg navbar-dark py-3 bg-dark sticky-bootom border rounded-3 border-light border-3 m-3 w-100">
+    <div class="container justify-content-center">
+      <a class="navbar-brand text-light">Bernardo B. Weiss e Bruno A. Falchetti - 3° Info B</a>
+    </div>
+  </nav>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
